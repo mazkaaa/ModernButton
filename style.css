@@ -1,0 +1,50 @@
+.container{
+    margin: 50px;
+    font-family: 'Roboto';
+}
+h1{
+    font-weight: 700;
+    color: #2F2D2E;
+    letter-spacing: 1.5px;
+    font-size: 2.5em;
+    text-align: center;
+}
+.button{
+    text-align: center;
+    padding: 15px 35px;
+    display: block;
+    max-width: 150px;
+    margin: 0 auto;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    font-size: 1em;
+    font-family: 'Roboto';
+    color: #12BC9A;
+    border: 1px solid #12BC9A;
+    text-decoration: none;
+    border-radius: 30px;
+    -webkit-transition: .1s ease-in;
+    transition: .1s ease-in;
+    position: relative;
+    overflow: hidden;
+    background: none;
+    z-index: 1;
+}
+.button:hover{
+    color: #fafafa;
+}
+.button:before{
+    content: "";
+    position: absolute;
+    background: #12BC9A;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    -webkit-transition: bottom .1s ease-in;
+    transition: bottom .1s ease-in;
+}
+.button:hover:before{
+    bottom: 0;
+}
